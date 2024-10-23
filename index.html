@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Pensión de Jubilación - IPM</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>IPM</h1>
+        <div class="contact">
+            <p><i class="fas fa-envelope"></i> insprevm@ipm.org.gt</p>
+            <p><i class="fas fa-phone"></i> +502 2305 4900</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Cálculo de Pensión de Jubilación</h2>
+        <form id="jubilacionForm" onsubmit="return false;">
+            <label for="primerNombre">Primer Nombre:</label>
+            <input type="text" id="primerNombre" required>
+
+            <label for="segundoNombre">Segundo Nombre:</label>
+            <input type="text" id="segundoNombre">
+
+            <label for="primerApellido">Primer Apellido:</label>
+            <input type="text" id="primerApellido" required>
+
+            <label for="segundoApellido">Segundo Apellido:</label>
+            <input type="text" id="segundoApellido">
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required>
+
+            <label for="correo">Correo Electrónico (opcional):</label>
+            <input type="email" id="correo">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" required>
+                <option value="" disabled selected>Seleccionar opción</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+
+            <label for="pertenencia">Pertenencia Sociolingüística:</label>
+            <select id="pertenencia" required>
+                <option value="" disabled selected>Seleccionar opción</option>
+                <option value="Mestizo">Mestizo</option>
+                <option value="Maya">Maya</option>
+                <option value="Garífuna">Garífuna</option>
+                <option value="Xinca">Xinca</option>
+                <option value="Otra">Otra</option>
+            </select>
+
+            <label for="añosCotizados">Años Cotizados:</label>
+            <input type="number" id="añosCotizados" required>
+
+            <h3>Ingrese los salarios de los últimos 5 años:</h3>
+            <label for="salario1">Salario Año 1:</label>
+            <input type="number" id="salario1" required>
+
+            <label for="salario2">Salario Año 2:</label>
+            <input type="number" id="salario2" required>
+
+            <label for="salario3">Salario Año 3:</label>
+            <input type="number" id="salario3" required>
+
+            <label for="salario4">Salario Año 4:</label>
+            <input type="number" id="salario4" required>
+
+            <label for="salario5">Salario Año 5:</label>
+            <input type="number" id="salario5" required>
+
+            <button type="button" onclick="calcularPension()">Calcular Pensión</button>
+        </form>
+    </div>
+
+    <script src="IMP CLC.js"></script> <!-- Enlace a tu archivo de JavaScript -->
+</body>
+
+</html>
