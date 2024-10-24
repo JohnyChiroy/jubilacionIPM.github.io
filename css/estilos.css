@@ -13,6 +13,7 @@ body {
     color: white;
     padding: 60px 20px;
     text-align: center;
+    background-color: #0367A6;
 }
 
 .header::after {
@@ -56,7 +57,7 @@ body {
 }
 
 h2 {
-    color: #003DA5;
+    color: #011126;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -66,9 +67,18 @@ label {
     margin: 15px 0 5px;
 }
 
-input,
+input{
+    max-width: 585px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 select,
 button {
+    max-width: 600px;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -77,7 +87,7 @@ button {
 }
 
 button {
-    background-color: #003DA5;
+    background-color: #0367A6;
     color: white;
     border: none;
     cursor: pointer;
@@ -85,7 +95,7 @@ button {
 }
 
 button:hover {
-    background-color: #1523dd;
+    background-color: #048ABF;
 }
 
 /* estilos resultado */
@@ -137,14 +147,14 @@ body {
 
 .resultado p {
     font-size: 18px;
-    color: #333;
+    color: #011126;
     margin: 10px 0;
 }
 
 button {
     width: 100%;
     padding: 15px;
-    background-color: #003DA5;
+    background-color: #0367A6;
     /* Azul IPM */
     color: white;
     border: none;
@@ -155,5 +165,5 @@ button {
 }
 
 button:hover {
-    background-color: #1523dd;
+    background-color: #048ABF;
 }
